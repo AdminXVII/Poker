@@ -41,7 +41,13 @@ public class Dealer {
 		
 	}
 	
-	void winConditions(){
-		
+	public static boolean winCondition()
+	{
+		boolean condition = false;
+		if (true)
+		{
+			condition = true;
+		}
+		return condition;
 	}
 }
