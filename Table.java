@@ -12,9 +12,7 @@ public class Table {
 		Player[] players = {younes,andrei,anthony};
 
 		Dealer.deal(players);
-		System.out.println(younes.hand[0] + " " + younes.hand[1] + " " +
-				andrei.hand[0] + " " + andrei.hand[1] + " " +
-				anthony.hand[0] + " " + anthony.hand[1]);
+		System.out.printf("%s\n%s\n%s\n", younes, andrei, anthony);
 
 		}
 

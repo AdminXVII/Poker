@@ -15,6 +15,16 @@ public class Player {
 
 	}
 
+  public String toString() {
+    return String.format("Player %s [%s %s]", name, cardToString(hand[0]), cardToString(hand[1]));
+  }
+
+  String cardToString(int card) {
+    char type = "♠♥♦♣".charAt(card & 3);
+    char number = "1234567890JQK".charAt(card >> 2);
+    return String.format("%c%c", number, type);
+  }
+
 	void bet(int bet){
 
 		this.chips -= bet;
